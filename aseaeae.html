@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio - Tim</title>
+
+    <style>
+
+        /* =========================
+           BASIS
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #111;
+        }
+
+        .website {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid #111;
+            padding: 19px;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            border: 1px solid #111;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 52px;
+            height: 52px;
+            border: 1px solid #111;
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 10px;
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: flex;
+        }
+
+        nav a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 90px;
+            height: 42px;
+
+            border: 1px solid #111;
+
+            color: #111;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #e5e5e5;
+        }
+
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        main {
+            margin-top: 20px;
+            border: 1px solid #111;
+            padding: 10px;
+        }
+
+
+        /* =========================
+           INTRODUCTIE
+        ========================= */
+
+        .intro {
+            display: flex;
+            gap: 20px;
+        }
+
+        .intro-text {
+            flex: 1;
+            min-height: 360px;
+
+            border: 1px dashed #111;
+            padding: 10px;
+        }
+
+        .intro-text h1 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .intro-text p {
+            font-size: 14px;
+            line-height: 1.25;
+        }
+
+        .intro-image {
+            flex: 1;
+
+            min-height: 360px;
+
+            border: 1px solid #111;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #f5f5f5;
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        /* =========================
+           PROJECTEN
+        ========================= */
+
+        .projects {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .project {
+            flex: 1;
+
+            min-height: 190px;
+
+            border: 1px dashed #111;
+
+            padding: 10px;
+
+            text-align: center;
+        }
+
+        .project-image {
+            width: 48px;
+            height: 48px;
+
+            margin: 0 auto 8px;
+
+            border: 1px solid #111;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project h2 {
+            margin: 5px 0 15px;
+            font-size: 23px;
+        }
+
+        .project p {
+            font-size: 13px;
+            line-height: 1.25;
+        }
+
+        .project:hover {
+            background-color: #f5f5f5;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            margin-top: 20px;
+
+            border: 1px solid #111;
+
+            min-height: 42px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 5px 10px;
+
+            font-size: 12px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-links a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           TABLET / MOBIEL
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .website {
+                padding: 10px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .intro {
+                flex-direction: column;
+            }
+
+            .intro-text,
+            .intro-image {
+                min-height: 250px;
+            }
+
+            .projects {
+                flex-direction: column;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="website">
+
+        <!-- =========================
+             NAVBAR
+        ========================= -->
+
+        <nav>
+
+            <div class="logo">
+                T
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#over-mij">Over mij</a>
+                </li>
+
+                <li>
+                    <a href="#vaardigheden">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projecten">Projecten</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!-- =========================
+             MAIN
+        ========================= -->
+
+        <main>
+
+            <!-- INTRODUCTIE -->
+
+            <section id="home" class="intro">
+
+                <div class="intro-text">
+
+                    <h1>
+                        Hallo, ik ben Tim
+                    </h1>
+
+                    <p>
+                        Ik ben een student Software Development en ik
+                        ben geïnteresseerd in programmeren, computers
+                        en game development.
+                    </p>
+
+                    <p>
+                        Ik vind het leuk om zelf dingen te maken en uit
+                        te zoeken hoe software en computers werken.
+                        Tijdens mijn opleiding leer ik steeds meer
+                        over programmeren en web development.
+                    </p>
+
+                    <p>
+                        Op deze website kun je meer over mij,
+                        mijn vaardigheden en mijn projecten vinden.
+                    </p>
+
+                </div>
+
+
+                <div class="intro-image">
+
+                    <!--
+                    Zet hier eventueel een foto van jezelf.
+
+                    Bijvoorbeeld:
+                    <img src="foto.jpg" alt="Foto van Tim">
+                    -->
+
+                    <span>
+                        Mijn foto / afbeelding
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 PROJECTEN
+            ========================= -->
+
+            <section id="projecten" class="projects">
+
+                <article class="project">
+
+                    <div class="project-image">
+                        💻
+                    </div>
+
+                    <h2>
+                        Portfolio
+                    </h2>
+
+                    <p>
+                        Mijn eigen portfolio website gemaakt
+                        met HTML en CSS voor mijn opleiding.
+                    </p>
+
+                </article>
+
+
+                <article class="project">
+
+                    <div class="project-image">
+                        🎮
+                    </div>
+
+                    <h2>
+                        Lost Survivor
+                    </h2>
+
+                    <p>
+                        Een gameproject in Unreal Engine 5
+                        met een liminal en VHS horrorstijl.
+                    </p>
+
+                </article>
+
+
+                <article class="project">
+
+                    <div class="project-image">
+                        🖥️
+                    </div>
+
+                    <h2>
+                        Milkyway
+                    </h2>
+
+                    <p>
+                        Een softwareproject waarbij ik
+                        bezig ben met C# en .NET.
+                    </p>
+
+                </article>
+
+            </section>
+
+
+            <!-- =========================
+                 OVER MIJ
+            ========================= -->
+
+            <section id="over-mij" class="page-section">
+
+                <h2>
+                    Over mij
+                </h2>
+
+                <p>
+                    Ik ben bezig met een opleiding Software Development.
+                    Ik vind programmeren interessant omdat je zelf
+                    programma's en websites kunt bouwen.
+                </p>
+
+                <p>
+                    Naast software development heb ik interesse in
+                    computers, hardware, games en techniek.
+                </p>
+
+            </section>
+
+
+            <!-- =========================
+                 VAARDIGHEDEN
+            ========================= -->
+
+            <section id="vaardigheden" class="page-section">
+
+                <h2>
+                    Mijn vaardigheden
+                </h2>
+
+                <table>
+
+                    <tr>
+                        <th>Vaardigheid</th>
+                        <th>Wat kan ik ermee?</th>
+                    </tr>
+
+                    <tr>
+                        <td>HTML</td>
+                        <td>Webpagina's maken</td>
+                    </tr>
+
+                    <tr>
+                        <td>CSS</td>
+                        <td>Websites vormgeven</td>
+                    </tr>
+
+                    <tr>
+                        <td>PHP</td>
+                        <td>Basis programmeren</td>
+                    </tr>
+
+                    <tr>
+                        <td>C#</td>
+                        <td>Software programmeren</td>
+                    </tr>
+
+                    <tr>
+                        <td>Unreal Engine</td>
+                        <td>Game development</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+
+            <!-- =========================
+                 CONTACT
+            ========================= -->
+
+            <section id="contact" class="page-section">
+
+                <h2>
+                    Contact
+                </h2>
+
+                <p>
+                    Wil je contact met mij opnemen?
+                    Vul dan het formulier hieronder in.
+                </p>
+
+                <form>
+
+                    <label for="naam">
+                        Naam
+                    </label>
+
+                    <input
+                        type="text"
+                        id="naam"
+                        name="naam"
+                    >
+
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                    >
+
+
+                    <label for="bericht">
+                        Bericht
+                    </label>
+
+                    <textarea
+                        id="bericht"
+                        name="bericht"
+                        rows="5"
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Versturen
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================
+             FOOTER
+        ========================= -->
+
+        <footer>
+
+            <div class="footer-links">
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+                <a href="#over-mij">
+                    Over ons
+                </a>
+
+            </div>
+
+
+            <p>
+                Copyright &copy; 2026 Tim
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
