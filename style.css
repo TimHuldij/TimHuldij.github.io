@@ -199,10 +199,16 @@ form input[type="submit"]:hover {
     margin-bottom: 6px;
 }
 
+.infoContainer > a {
+    font-size: 40px;
+}
+
 iframe {
     width: 100%;
     height: 300px;
 }
+
+
 
 
 @media (max-width: 768px) {
