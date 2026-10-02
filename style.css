@@ -37,12 +37,16 @@ nav ul li{
 .container{
     display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+    flex-wrap: nowrap;
 	justify-content: space-evenly;
     align-items: center;
     margin: 10px 20Px;
     padding: 20px;
     border-style:dashed;
+}
+
+.intro{
+
 }
 
 .box{
@@ -59,7 +63,6 @@ nav ul li{
     margin: 20px 20Px;
     padding: 20px;
     border-style:dashed;
-
 }
 
 .project_container img{
@@ -208,8 +211,10 @@ iframe {
     height: 300px;
 }
 
+.gifImg {
+    cursor: pointer;
 
-
+}
 
 @media (max-width: 768px) {
   
