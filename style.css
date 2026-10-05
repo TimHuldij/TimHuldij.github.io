@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #8589af;
-    background-color: #16191D ;
+    background-color: #16191D;
 }
 
 a {
@@ -18,7 +18,9 @@ nav {
     justify-content: flex-start;
     align-items: center;
     margin: 20px;
-    border-style:dashed;
+    border-style:solid;
+    border-color: #9756f2;
+    border-radius: 10px;
     position: sticky;
     top: 0;
 }
@@ -42,12 +44,15 @@ nav ul li{
     align-items: center;
     margin: 10px 20Px;
     padding: 20px;
-    border-style:dashed;
+    border-style:solid;
+    border-color: #9756f2;
+    border-radius: 10px;
 }
 
 .box{
-    border-style:dotted;
-
+    border-style:solid;
+    border-color: #9756f2;
+    border-radius: 10px;
     width: 90%;
     margin: 5px; 
 }
@@ -58,7 +63,9 @@ nav ul li{
     justify-content: space-evenly;
     margin: 20px 20Px;
     padding: 20px;
-    border-style:dashed;
+    border-style:solid;
+    border-color: #9756f2;
+    border-radius: 10px;
 }
 
 .project_container img{
@@ -122,7 +129,7 @@ footer{
     padding: 30px 20px;
     text-align: left;
     background-color: #181a1f;
-    border-top: 1px solid #2c2f36;
+    border-top: 1px;
 }
 
 .copyright {
@@ -155,7 +162,7 @@ form select {
     box-sizing: border-box;
     width: 100%;
     padding: 11px 12px;
-    border: 1px solid #2c2f36;
+    border: 1px;
     border-radius: 5px;
     background-color: #181a1f;
     color: #8589af;
