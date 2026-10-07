@@ -229,7 +229,7 @@ iframe {
 
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 4000px) { 
     body {
         background-color: #1657ab;
     }
