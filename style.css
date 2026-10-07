@@ -230,6 +230,9 @@ iframe {
 }
 
 @media (max-width: 950px) { 
+    body {
+        background-color: #1657ab;
+    }
     .container {
         display: flex; 
         flex-direction: row;
