@@ -49,6 +49,10 @@ nav ul li{
     border-radius: 10px;
 }
 
+.container img{
+    border-radius: 10px;
+}
+
 .box{
     border-style:solid;
     border-color: #9756f2;
@@ -90,6 +94,12 @@ nav ul li{
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+
+.logo img:hover{
+    height: 50px;
+    width: 50px;
+    border-radius: 15%;
 }
 
 a:link {
@@ -220,9 +230,33 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  
-}
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+    }
 
-@media (max-width: 480px) {
-    
+    .container img {
+        display: block;
+        width: min(350px, 100%);
+        height: auto;
+        margin: 25px auto 0;
+        border-radius: 10px;
+    }
+
+    .project_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project_container img {
+        display: block;
+        width: min(350px, 100%);
+        height: auto;
+        margin: 25px auto 0;
+    }
+
+    form {
+        width: 100%;
+    }
 }
